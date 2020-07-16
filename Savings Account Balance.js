@@ -8,11 +8,9 @@ const balance = (openingSum, interestRate, taxFreeLimit, taxRate, numMonths) => 
 
   accountBalance += monthlyInterest * lengthInvestment + 1
  
-  // I DIDN'T HAVE TIME TO IMPLENT THE TAX CALC FEATURE
   if (accountBalance > taxFreeLimit) {
-    return accountBalance * monthlyTax;
+    return  accountBalance - taxFreeLimit * monthlyTax ;
   } 
-  // I DIDN'T HAVE TIME TO IMPLENT THE TAX CALC FEATURE
 
   return accountBalance;
   // The +1 it's because of the compound interest formula
