@@ -5,4 +5,4 @@ const reverseString = (str) => {
    return str[str.length - 1] + reverseString(str.slice(0,-1));
 }
 
-reverseString("");
+reverseString("Merkle");
